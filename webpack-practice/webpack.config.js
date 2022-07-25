@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/script.js',
   output: {
     path: path.resolve(__dirname, 'docs'),
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    clean: true, // 번들링 할 때 마다 docs 디렉터리 정리
   },
   module: {
     rules: [
